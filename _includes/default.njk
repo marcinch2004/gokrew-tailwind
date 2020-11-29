@@ -10,15 +10,17 @@
     {% endif %}
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="{{ '/style.css?v=' | url }}{% version %}"/>
     {% block head %}{% endblock %}
     <script src="{{ '/js/alpine.js?v=' | url }}{% version %}"></script>
   </head>
 
-  <header>
-    <a href="{{ '/' | url }}" class="link--home">My Blog</a>
-    <a href="{{ 'about' | url }}" class="link--about">About</a>
-  </header>
+  {# <header>
+    {# <a href="{{ '/' | url }}" class="link--home">My Blog</a>
+    <a href="{{ 'about' | url }}" class="link--about">About</a> #}
+  {# </header> #}
 
   <body>
     {% block content %}

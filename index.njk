@@ -4,16 +4,41 @@
 
 {% block content %}
 
-  <section class="container mx-auto">
-    <img src="images/gokrew-play-2.gif">    
-    <img src="images/ultrago-1.png">    
-    <img src="images/ultrago-2.png">
-  </section>
-  <div class="inset-0 flex justify-center items-center">
-    <div>
-      <span class="text-xl font-semibold text-change">Moje design</span><br/>
-      <span class="change">is<br/>as little design<br/>as possible</span><br/>
-      <span x-data="{message:'🤖 Hello World 🤓'}" x-text="message"></span>
+  
+
+
+  <section class="inset-0 flex flex-col justify-center items-center">
+    <div class="flex relative my-8 pl-20 pr-12">
+      <div class="realtive z-10 pt-8">
+        <h2 class="text-6xl font-display font-bold leading-tight mt-0 mb-2 text-change">Dołącz do Ultrakrwi. Zbieraj kilometry</h2>
+        <p class="font-serif">Zarejestruj się w aplikacji GoKrew, rób treningi gdziekolwiek jesteś, a zrobione przez Ciebie kilometry zapiszą się w ogólnym wyniku całej społeczności.</p>
+        <a href="">
+          <img src="images/google-play-badge.png">
+        </a>
+      </div>
+      <div class="">
+        <img class="max-w-none relative z-20" src="images/gokrew-play-3.gif">
+      </div>
+      <div class="w-95/100 z-0 h-full top-0 right-0 absolute rounded-3xl transform shadow-lg bg-gradient-to-br from-orange-400 to-pink-600 -rotate-1 sm:-rotate-2"></div>
+
     </div>
-  </div>
+
+    <div class="flex relative my-8">
+      <img src="images/trenning.png">
+      <div>
+        <div class="w-full flex-none -ml-full rounded-3xl transform shadow-lg bg-gradient-to-br from-cyan-400 to-light-blue-500 -rotate-1 sm:-rotate-2"></div>
+        <h2 class="text-6xl font-display font-bold leading-tight mt-0 mb-2">Zadbaj o swoje zdrowie</h2>
+        <p class="font-serif">Aktywność fizyczna na świeżym powietrzu buduje odporność. To ważne w czasach pandemii, którą teraz mamy. Kilometry, bez względu na to, czy jest to pięćdziesiąt czy pół, pokonane podczas aktywności zsumują się z kilometrami innych użytkowników. Aby być częścią wirtualnej Ultrakrwi, na stronie głównej aplikacji kliknij „Rozpocznij trening”. </p>
+      </div>
+    </div>
+
+    <div class="flex">
+      <div>
+        <h2 class="text-6xl font-bold leading-normal mt-0 mb-2 text-change">Wygraj chusty w konkursie. </h2>
+        <p class="font-serif">Każdy użytkownik, który od 01.12.2020 do 31.01.2021 pokona z użyciem aplikacji GoKrew 100 mil bierze udział w losowaniu stu wielofunkcyjnych chust od Ultrakrwi. Szczegóły <a href="http://ultrakrew.pl/aplikacja/" target="_blank">w regulaminie aplikacji</a>.</p>
+      </div>
+      <img src="images/event.png">
+    </div>
+
+  </section>
 {% endblock %}

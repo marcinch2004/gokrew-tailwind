@@ -11,8 +11,14 @@ module.exports = {
   },
   theme: {
     extend: {
+      fontFamily: {
+        'display': ['Rubik', 'serif'],
+      },
       colors: {
         change: "black",
+      },
+      width: {
+        '95/100': '97%',
       },
     },
   },

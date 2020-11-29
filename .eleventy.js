@@ -3,6 +3,8 @@ const htmlmin = require("html-minifier");
 module.exports = function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
 
+  eleventyConfig.addPassthroughCopy("css/fonts");
+
   eleventyConfig.addWatchTarget("./_tmp/style.css");
 
   eleventyConfig.addPassthroughCopy({ "./_tmp/style.css": "./style.css" });

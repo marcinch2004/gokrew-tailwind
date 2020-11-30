@@ -26,9 +26,24 @@
     {% block content %}
       {{ content | safe }}
     {% endblock %}
-  </body>
 
-  <footer class="flex justify-center">
-    <p class="text-sm uppercase p-2">Ultrakrew 2015-2020 | Gokrew 2020</p>
-  </footer>
+    <footer class="flex justify-center">
+      <p class="text-sm uppercase p-2">Ultrakrew 2015-2020 | Gokrew 2020</p>
+    </footer>
+
+    <script type="text/javascript">
+      document.addEventListener("mousemove", parallax);
+      console.log('dupa');
+      function parallax (e){
+        document.querySelectorAll(".object").forEach(function(move){
+          var moving_value = move.getAttribute("data-value");
+          var x  = (e.clientX * moving_value) / 250;
+          var y = (e.clientY * moving_value) / 250;
+          move.style.transform = "translateX("+ x +"px) translateY(" + y + "px)";
+          console.log('dupa-2');
+        });
+      }
+    </script>
+
+  </body>
 </html>

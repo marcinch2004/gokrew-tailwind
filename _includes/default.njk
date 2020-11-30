@@ -22,9 +22,13 @@
     <a href="{{ 'about' | url }}" class="link--about">About</a> #}
   {# </header> #}
 
-  <body>
+  <body class="overflow-x-hidden">
     {% block content %}
       {{ content | safe }}
     {% endblock %}
   </body>
+
+  <footer class="flex justify-center">
+    <p class="text-sm uppercase p-2">Ultrakrew 2015-2020 | Gokrew 2020</p>
+  </footer>
 </html>

@@ -19,6 +19,13 @@ module.exports = {
       },
       width: {
         '95/100': '97%',
+        'max-w-text' : '65ch',
+      },
+      height: {
+        '96/100' : '96%',
+      },
+      position: {
+        '2' : '5rem',
       },
     },
   },

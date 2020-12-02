@@ -5,11 +5,10 @@
 @layer utilities {
   .change {
     color: black;
-  };
-  .fade-in {
-    animation: fade-in 1.4s;
   }
-  
+  .fade-in {
+    animation: fade-in 1s;
+  }
   @keyframes fade-in {
       0% {
         opacity: 0; 

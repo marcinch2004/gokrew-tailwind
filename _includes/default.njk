@@ -13,15 +13,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet"> 
     {# <link rel="stylesheet" href="{{ '/style.css?v=' | url }}{% version %}"/> #}
-    <link rel="stylesheet" href="style.css?v={% version %}"/>
+    <link rel="stylesheet" href="../style.css?v={% version %}"/>
     {% block head %}{% endblock %}
     <script src="{{ '/js/alpine.js?v=' | url }}{% version %}"></script>
   </head>
 
-  {# <header>
-    {# <a href="{{ '/' | url }}" class="link--home">My Blog</a>
-    <a href="{{ 'about' | url }}" class="link--about">About</a> #}
-  {# </header> #}
+  <header>
+    <a href="{{ '/' | url }}" class="link--home">Gokrew</a>
+    <a href="{{ 'about' | url }}" class="link--about">About</a>
+    <a href="{{ 'regulamin' | url }}" class="link--regulamin">Regulamin</a>
+  </header>
 
   <body class="overflow-x-hidden">
     {% block content %}

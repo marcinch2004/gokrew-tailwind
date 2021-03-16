@@ -18,10 +18,16 @@
     <script src="{{ '/js/alpine.js?v=' | url }}{% version %}"></script>
   </head>
 
-  <header>
-    <a href="{{ '/' | url }}" class="link--home">Gokrew</a>
-    <a href="{{ '/polityka-prywatnosci' | url }}" class="link--polityka-prywatnosci">Polityka prywatności</a>
-    <a href="{{ '/general-provisions' | url }}" class="link--general-provisions">General provisions</a>
+  <header class="flex items-center justify-between flex-wrap bg-teal py-4 px-6 border-b">
+    <div class="flex items-center flex-no-shrink text-lg font-extrabold uppercase text-blue-600 mr-16">
+      <a href="{{ '/' | url }}" class="link--home">Go<span class="text-red-600">krew</span></a>
+    </div>
+    <nav class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+      <div class="text-sm lg:flex-grow">
+        <a class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-blue-600 mr-4" href="{{ '/polityka-prywatnosci' | url }}" class="link--polityka-prywatnosci">Polityka prywatności</a>
+        <a class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-blue-600 mr-4" href="{{ '/general-provisions' | url }}" class="link--general-provisions">General provisions</a>
+      </div>
+    </nav>
   </header>
 
   <body class="overflow-x-hidden">

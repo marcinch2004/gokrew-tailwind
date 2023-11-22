@@ -11,46 +11,42 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
     {# <link rel="stylesheet" href="{{ '/style.css?v=' | url }}{% version %}"/> #}
     <link rel="stylesheet" href="../style.css?v={% version %}"/>
     {% block head %}{% endblock %}
     <script src="{{ '/js/alpine.js?v=' | url }}{% version %}"></script>
   </head>
 
-  <header class="flex items-center justify-between flex-wrap bg-teal py-4 px-6 border-b">
-    <div class="flex items-center flex-no-shrink text-lg font-extrabold uppercase text-blue-600 mr-16">
-      <a href="{{ '/' | url }}" class="link--home">Go<span class="text-red-600">krew</span></a>
-    </div>
-    <nav class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-      <div class="text-sm lg:flex-grow">
-        <a class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-blue-600 mr-4" href="{{ '/polityka-prywatnosci' | url }}" class="link--polityka-prywatnosci">Polityka prywatności</a>
-        <a class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-blue-600 mr-4" href="{{ '/general-provisions' | url }}" class="link--general-provisions">General provisions</a>
-      </div>
-    </nav>
-  </header>
-
   <body class="overflow-x-hidden">
     {% block content %}
       {{ content | safe }}
     {% endblock %}
 
-    <footer class="flex justify-center">
-      <p class="text-xs uppercase p-2">Ultrakrew © 2016-2021 | © Gokrew 2020-2021 | Site by <a class="text-gray-600  underline	" href="https://marcinchelminiak.pl" target="_blank">krófka design</a></p>
+    <div class="flex items-center justify-between flex-wrap bg-teal py-4 px-6 border-b">
+      <div class="flex items-center flex-no-shrink text-lg font-poppins font-extrabold mr-16">
+        <a href="{{ '/' | url }}" class="link--home"><img src="/images/bordered_logo.png" alt="Logo aplikacji GoKrew" width="30" class='inline' /><span class="ml-2">GoKrew</span></a>
+      </div>
+      <nav class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="text-sm lg:flex-grow">
+          <a class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-blue-600 mr-4" href="https://partner.gokrew.pl" target="_blank" class="link--partner-gokrew-pl">Panel dla Partnerów</a>
+          <a class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-blue-600 mr-4" href="{{ '/instrukcje-dla-firm' | url }}" class="link--instrukcje-dla-firm">Instrukcje dla firm</a>
+          <a class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-blue-600 mr-4" href="https://ultrakrew.pl/aplikacja" class="link--polityka-regulamin">Regulamin</a>
+          <a class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-blue-600 mr-4" href="{{ '/polityka-prywatnosci' | url }}" class="link--polityka-prywatnosci">Polityka Prywatności</a>
+          <a class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-blue-600 mr-4" href="{{ '/general-provisions' | url }}" class="link--general-provisions">Privacy Policy</a>
+        </div>
+      </nav>
+    </div>
+
+    <footer class="bg-gray-200 p-4 text-gray-600">
+      {% block legal %}
+        {{ legal| safe }}
+      {% endblock %}
+      <p class="text-xs uppercase pt-4 text-black">Ultrakrew © 2016-2023 | © Gokrew 2020-2023 | Site by <a class="text-gray-600 underline" href="https://marcinchelminiak.pl" target="_blank">krófka design</a></p>
     </footer>
 
     <script type="text/javascript">
-      {# document.addEventListener("mousemove", parallax);
-      console.log('dupa');
-      function parallax (e){
-        document.querySelectorAll(".object").forEach(function(move){
-          var moving_value = move.getAttribute("data-value");
-          var x  = (e.clientX * moving_value) / 250;
-          var y = (e.clientY * moving_value) / 250;
-          move.style.transform = "translateX("+ x +"px) translateY(" + y + "px)";
-          console.log('dupa-2');
-        });
-      } #}
 
       var animateHTML = function() {
         var elems,
@@ -63,6 +59,7 @@
         }
         
         var _addEventHandlers = function() {
+            window.addEventListener("load", _checkPosition);
             window.addEventListener("scroll", _checkPosition);
             window.addEventListener("resize", init)
         }

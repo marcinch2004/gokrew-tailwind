@@ -1,0 +1,190 @@
+{% extends "_includes/default.njk" %}
+
+{% block title %}Instrukcje dla firm | GoKrew{% endblock %}
+
+{% block content %}
+    <section class="inset-0 md:flex flex-col justify-center items-center">
+        <div class="relative max-w-4xl my-8 px-8 md:px-12 font-serif">
+          
+            <h3 class="text-4xl md:text-5xl font-poppins font-bold leading-tight mb-4 text-change">Instrukcje dla firm wspierających Ultrakrew</h3>
+            <h6 class="text-xl leading-tight">Jak korzystać z panelu administracyjnego?</h6>
+       
+            <div class="p-4 bg-orange-300 mt-10">
+                <p>
+                    <span class="font-bold font-poppins uppercase">Uwaga!</span>
+                    Program dla firm wspierających jest pilotażowy i udostępniany tylko wybranym firmom. Prosimy o kontakt na adres <a href="mailto:gokrew@ultrakrew.pl" title="Wyślij wiadomość" class="underline hover:text-blue-600">gokrew@ultrakrew.pl</a> w sprawach dostępu do panelu.
+                </p>
+            </div>
+
+            <div class="mt-10">
+                <h6 class="text-xl leading-tight font-poppins font-bold">Spis treści</h6>
+                <ol class="list-decimal font-serif text-lg pl-12">
+                    <li>
+                        <a href="#rejestracja" class="underline text-blue-600 hover:text-blue-900">Rejestracja do panelu administracyjnego</a>
+                    </li>
+                    <li>
+                        <a href="#logowanie" class="underline text-blue-600 hover:text-blue-900">Logowanie do panelu administracyjnego</a>
+                    </li>
+                    <li>
+                        <a href="#rejestracja-pracownika" class="underline text-blue-600 hover:text-blue-900">Rejestracja pracownika</a>
+                    </li>
+                    <li>
+                        <a href="#uzupełnienie-informacji" class="underline text-blue-600 hover:text-blue-900">Uzupełnienie informacji o firmie</a>
+                    </li>
+                     <li>
+                        <a href="#tworzenie-zespołów" class="underline text-blue-600 hover:text-blue-900">Tworzenie zespołów</a>
+                    </li>
+                     <li>
+                        <a href="#usuwanie-pracownika" class="underline text-blue-600 hover:text-blue-900">Usuwanie pracownika</a>
+                    </li>
+                     <li>
+                        <a href="#raporty" class="underline text-blue-600 hover:text-blue-900">Raporty dotyczące ilości przebiegniętych kilometrów</a>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="mt-10" id="rejestracja">
+                <h6 class="text-xl leading-tight font-poppins font-bold">Rejestracja do panelu administracyjnego</h6>
+
+                <ol class="list-decimal font-serif text-lg pl-12">
+                    <li>
+                        Wejdź na stronę <a href="https://partner.gokrew.pl" title="Otwórz stronę" target="_blank" class="underline hover:text-blue-600">partner.gokrew.pl</a> i wybierz „Firma”.
+                    </li>
+                    <li>
+                        Zjedź niżej i w rubryce „Kod rejestracyjny” wpisz kod, który dostałeś mailem. Nie masz kodu? Skontaktuj się z Ultrakrwią!
+                    </li>
+                    <li>
+                        Kliknij „Zarejestruj”.
+                    </li>
+                    <li>
+                        Jeśli kod jest poprawny, zostaniesz poproszony o podanie swoich danych. <u>Nie opuszczaj strony podczas rejestracji!</u> Wpisz email, który nie był do tej pory zarejestrowany w aplikacji GoKrew i jest na domenie Twojej firmy. Np jeśli Twoja firma nazywa się „Example”, zarejestruj firmę na adres <i>imienazwisko@example.com</i>. Twoi pracownicy będą musieli mieć email zarejestrowany na tę samą domenę.
+                    </li>
+                    <li>
+                        Na podany adres email przyjdzie wiadomość z linkiem weryfikacyjnym. <u>Nie zamykaj strony rejestracji podczas gdy sprawdzasz pocztę!</u>
+                    </li>
+                    <li>
+                        Po kliknięciu w link, powróć do otwartej karty i kliknij „dalej”. Pamiętaj, że system może automatycznie nie rozpoznać, że potwierdziłeś swój email, dlatego być może będziesz musiał <u>kliknąć przycisk dwa razy.</u> Jeśli to nie pomaga, wybierz „wyślij ponownie” i jeszcze raz potwierdź swój email.
+                    </li>
+                    <li>
+                        Po weryfikacji zostaniesz przeniesiony do panelu administracyjnego Twojej firmy. 
+                    </li>
+                </ol>
+            </div>
+
+            <div class="mt-10" id="logowanie">
+                <h6 class="text-xl leading-tight font-poppins font-bold">Logowanie do panelu administracyjnego</h6>
+
+                <ol class="list-decimal font-serif text-lg pl-12">
+                    <li>
+                        Wejdź na stronę <a href="https://partner.gokrew.pl" title="Otwórz stronę" target="_blank" class="underline hover:text-blue-600">partner.gokrew.pl</a> i wybierz „Firma”.
+                    </li>
+                    <li>
+                        Wpisz swój adres email i hasło do konta administratora firmy. Nie pamiętasz hasła? Skontaktuj się z Ultrakrwią lub spróbuj zresetować hasło logując się do aplikacji GoKrew na telefonie.
+                    </li>
+                    <li>
+                        Po poprawnym wpisaniu hasła zostaniesz przeniesiony do panelu administracyjnego Twojej firmy.
+                    </li>
+                </ol>
+            </div>
+
+            <div class="mt-10" id="rejestracja-pracownika">
+                <h6 class="text-xl leading-tight font-poppins font-bold">Rejestracja pracownika</h6>
+
+                <ol class="list-decimal font-serif text-lg pl-12">
+                    <li>
+                        Pracownik Twojej firmy będzie mógł dołączyć poprzez utworzenie konta w aplikacji GoKrew na adres email w domenie Twojej firmy. Np jeśli Twoja firma nazywa się „Example”, pracownik musi się zarejestrować na adres <i>nazwiskopracownika@example.com</i>.
+                    </li>
+                    <li>
+                        Po zarejestrowaniu konta, wyświetli się komunikat z zapytaniem, czy jest pracownikiem firmy „Example”. Należy kliknąć „Tak, utwórz konto firmowe”.
+                    </li>
+                    <li>
+                        Na podany adres email zostanie wysłany link weryfikacyjny. Po potwierdzeniu, pracownik może wrócić do aplikacji i kliknąć „Dalej”. 
+                    </li>
+                    <li>
+                        Jeśli pracownik ma już konto w aplikacji GoKrew, może zmienić adres email poprzez przejście do ustawień aplikacji, wybrania „ustawienia konta” i kliknięciu w pozycję „zmień adres email”. Następnie trzeba podać email firmowy i w ustawieniach konta kliknąć „konto firmowe”. Reszta kroków wygląda tak samo jak w przypadku rejestracji nowego konta. 
+                    </li>
+                </ol>
+            </div>
+
+            <div class="mt-10" id="uzupełnienie-informacji">
+                <h6 class="text-xl leading-tight font-poppins font-bold">Uzupełnienie informacji o firmie</h6>
+
+                <ol class="list-decimal font-serif text-lg pl-12">
+                    <li>
+                        W zakładce „Dane firmy” w panelu administracyjnym jako administrator firmy możesz modyfikować dane firmy.
+                    </li>
+                    <li>
+                        Nazwa firmy to nazwa wyświetlana publicznie wśród pracowników i potencjalnych pracowników. Polecamy zostawić tę nazwę, która została nadana przez Ultakrew, ale w razie potrzeb, można ją zmodyfikować.
+                    </li>
+                    <li>
+                        Polityka tworzenia zespołów to opcja, w której jako administrator firmy możesz pozwolić swoim pracownikom na utworzenie zespołów („elastyczna”) lub ograniczyć ich do dołączania do zespołów utworzonych przez Ciebie („sztywna”).
+                    </li>
+                    <li>
+                        Logo firmy jest widoczne wśród pracowników. Polecamy dodać logo, które jest powszechnie znane. Po przesłaniu zdjęcia, można je zmodyfikować, jednak warto pamiętać, że proces zmiany logo u wszystkich pracowników może zająć do dwóch tygodni. Przesłane zdjęcie musi spełniać określone kryteria.
+                    </li>
+                </ol>
+            </div>
+
+            <div class="mt-10" id="tworzenie-zespołów">
+                <h6 class="text-xl leading-tight font-poppins font-bold">Tworzenie zespołów</h6>
+
+                <ol class="list-decimal font-serif text-lg pl-12">
+                    <li>
+                        Pracownicy mogą dołączać do zespołów lub je tworzyć, jeśli polityka tworzenia zespołów firmy jest ustawiona na „elastyczną”.
+                    </li>
+                    <li>
+                        Zespoły to forma aktywizacji i integracji pracowników. Pracownicy nie widzą adresów email członków zespołu.
+                    </li>
+                    <li>
+                        Nazwę zespołu może zmienić tylko pracodawca z poziomu panelu administracyjnego.
+                    </li>
+                </ol>
+            </div>
+
+            <div class="mt-10" id="usuwanie-pracownika">
+                <h6 class="text-xl leading-tight font-poppins font-bold">Usuwanie pracownika</h6>
+
+                <ol class="list-decimal font-serif text-lg pl-12">
+                    <li>
+                        W panelu administracyjnym w zakładce „Administracja” wybierz tabelę „Pracownicy”
+                    </li>
+                    <li>
+                        Znajdź pracownika, którego chcesz usunąć.
+                    </li>
+                    <li>
+                        Wybierz ikonę, która świeci się na czerwono i potwierdź zamiar usunięcia pracownika.
+                    </li>
+                    <li>
+                        Pracownik zostanie usunięty od razu i nie będzie mógł zostać ponownie pracownikiem firmy. Jeśli zmienisz w przyszłości zdanie, możesz pozwolić pracownikowi zarejestrować się ponownie poprzez kliknięcie „usuń z listy”.
+                    </li>
+                    <li>
+                        Jeśli pracownik sam opuścił organizację, może do niej w każdej chwili powrócić, ale możesz to powstrzymać poprzez kliknięcie przycisku „zablokuj” przy pracowniku, który opuścił firmę.
+                    </li>
+                </ol>
+            </div>
+
+            <div class="mt-10" id="raporty">
+                <h6 class="text-xl leading-tight font-poppins font-bold">Raporty dotyczące ilości przebiegniętych kilometrów</h6>
+
+                <ol class="list-decimal font-serif text-lg pl-12">
+                    <li>
+                        Pracownicy w aplikacji widzą kilometry zespołów oraz ilość pracowników, będących w zespołach.
+                    </li>
+                    <li>
+                        Z poziomu panelu administracyjnego nie jest możliwe zobaczenie tych danych.
+                    </li>
+                    <li>
+                        Raporty i wszelkie dane potrzebne do przeprowadzenia konkursu wewnątrzfirmowego zostaną wygenerowane i podane na koniec akcji administratorom firm, na początku lutego 2024. Ultrakrew poinformuje o nich w mailu.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block legal %}
+    <div class="text-xs">
+        <p><sup>1</sup> Panel dla firm jest dostępny jedynie dla firm wspierających działania statutowe Stowarzyszenia Ultrakrew.</p>
+        <p><sup>2</sup> Stowarzyszenie Ultrakrew zastrzega sobie prawo do zmiany w funkcjonowaniu oraz zakresie funkcjonowania panelu dla firm.</p>
+    </div>
+{% endblock %}

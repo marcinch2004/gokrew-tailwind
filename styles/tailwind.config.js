@@ -13,6 +13,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'display': ['Rubik', 'serif'],
+        'poppins': ['Poppins', 'sans-serif'],
       },
       colors: {
         change: "black",

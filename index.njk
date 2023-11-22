@@ -1,67 +1,114 @@
 {% extends "_includes/default.njk" %}
 
-{% block title %}GOKREW{% endblock %}
+{% block title %}GoKrew - aplikacja Ultrakrew{% endblock %}
 
 {% block content %}
 
-  
+  <section class="relative w-screen h-screen">
+    <div class="absolute inset-0 z-0">
+      <img class="w-full h-full object-cover" src="images/background_image.png" alt="tło" />
+    </div>
+    <div class="absolute inset-0 z-10 opacity-0">
+      <div class="flex flex-col lg:flex-row items-center justify-center h-screen overflow-hidden">
+        <div class ="flex-1 w-full lg:w-1/2 flex flex-col items-start border-box p-0 lg:p-24 items-center lg:items-start justify-center">
+          <img class="h-24 lg:h-48 w-auto object-contain" src="images/bordered_logo.png" alt="GoKrew logo"/>
+          <h1 class="text-5xl lg:text-6xl font-bold font-poppins leading-tight">GoKrew</h1>
+          <p class="text-xl lg:text-2xl font-poppins leading-tight">Bądź aktywnym krwiodawcą</p>
+          <div class="h-5"></div>
+          <div class="h-12 flex items-center">
+            <a class="w-32 lg:w-40" href="https://play.google.com/store/apps/details?id=com.ultrakrew.gokrew" target="_blank">
+              <img alt="Pobierz z Google Play" src="images/google-play-badge.png" title="Pobierz z Google Play" class="w-32 lg:w-40 transform transition duration-200 hover:scale-105" />
+            </a>
+            <a class="w-32 lg:w-40" href="https://apps.apple.com/us/app/gokrew-aplikacja-ultrakrew/id6472076482" target="_blank">
+              <img alt="Pobierz z App Store" src="images/app-store-badge.png" title="Pobierz z App Store" class="w-32 lg:w-40 transform scale-90 transition duration-200 hover:scale-95" />
+            </a>
+          </div>
+        </div>
+        <div class="flex-1 h-0 lg:h-full w-full lg:w-1/2 flex p-0 lg:p-12">
+          <img class="w-full h-full object-contain" alt="Dwa iPhony z włączoną aplikacją GoKrew" src="images/iphones-standing.png" data-value="1" />
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="inset-0 md:flex flex-col justify-center items-center">
 
-    <div class="flex flex-col md:flex-row w-95/100 justify-center items-center relative my-8 px-8 md:px-12">
-      <div class="realtive max-w-2xl z-30 pt-16 pb-8 md:pt-0 md:mr-16">
-        <h2 class="text-4xl md:text-6xl font-display font-bold leading-tight mb-4 text-change">Dołącz do Ultrakrwi. Zbieraj kilometry</h2>
-        <p class="font-serif text-lg">Zarejestruj się w aplikacji GoKrew, rób treningi gdziekolwiek jesteś, a zrobione przez Ciebie kilometry zapiszą się w ogólnym wyniku całej społeczności.</p>
-        <a class="block mt-4" href="https://bit.ly/GoKrew" target="_blank">
-          <img class="w-56 transform transition duration-200 hover:scale-105" src="images/google-play-badge.png">
-        </a>
+    <div class="flex flex-col md:flex-row w-95/100 justify-center items-center relative my-8 px-8 md:px-12 md:h-screen">
+      <div class="flex-2 md:w-1/2 realtive z-30 pt-16 md:pt-0 md:mr-16">
+        <h2 class="text-4xl md:text-6xl font-poppins font-bold leading-tight mb-4 text-change">Dołącz do Ultrakrwi. Zbieraj kilometry.</h2>
+        <p class="font-serif text-lg">Kliknij „Rozpocznij trening” i zbieraj kilometry podczas spaceru lub biegu. Śledź swój postęp na mapce w aplikacji, która pokazuje w jakim mieście byś był/a, gdybyś pokonywał/a trasę Ultrakrwi, czyli 550 km wzdłuż polskiego wybrzeża Bałtyku. </p>
+        <p class="font-serif text-lg">Dowiedz się więcej czym jest Ultrakrew na <a href="https://ultrakrew.pl/" title="Przejdź do strony Ultrakrwi" class="text-gray-800 hover:text-black hover:underline">www.ultrakrew.pl</a> i śledź nas na <a href="https://www.facebook.com/Ultrakrew" target="_blank" title="Przejdź Facebook'a Ultrakrwi" class="text-gray-800 hover:text-black hover:underline">Facebooku</a>.</p>
       </div>
-      <div class="">
-        <img class="fade-in max-w-none relative z-20" src="images/gokrew-play-3.gif" width="300" data-value="2">
+      <div class="flex-1 h-64 w-full md:w-1/2 md:h-screen realtive z-20 md:flex md:items-end lg:p-10">
+        <img class="opacity-0 object-contain w-full h-full" src="images/iphone-image-1.png" alt="Strona główna aplikacji GoKrew" data-value="2">
       </div>
       <div class="absolute w-full z-10 h-96/100 right-0 mt-2 rounded-3xl transform shadow-xl bg-gradient-to-br from-blue-200 to-blue-500 -rotate-1 sm:-rotate-1"></div>
       <div class="w-full z-0 h-full top-0 right-0 absolute rounded-3xl transform bg-gradient-to-br from-gray-100 to-gray-100"></div>
     </div>
 
-    <div class="flex flex-col md:flex-row w-95/100 justify-center items-center relative my-8 px-8 md:px-12">
-      <div class="order-last md:order-first realtive z-20 md:mr-16">
-        <img class="opacity-0 object max-w-none" src="images/zdrowie.png" width="300" data-value="-3">
+    <div class="flex flex-col lg:flex-row w-95/100 justify-center items-center relative my-8 px-8 lg:px-12">
+      <div class="order-last lg:order-first realtive z-20 lg:mr-16">
+        <img class="opacity-0 object max-w-none" src="images/iphone-image-2.png" width="400" data-value="-3">
       </div>
-      <div class="realtive max-w-xl z-20 pt-16 pb-8 md:pt-0">
-        <h2 class="text-4xl md:text-6xl font-display font-bold leading-tight mb-4 text-change">Zadbaj o&nbsp;swoje zdrowie</h2>
-        <p class="font-serif text-lg max-w-prose">Aktywność fizyczna na świeżym powietrzu buduje odporność. To ważne w czasach pandemii, którą teraz mamy. Kilometry, bez względu na to, czy jest to pięćdziesiąt czy pół, pokonane podczas aktywności zsumują się z kilometrami innych użytkowników. Aby być częścią wirtualnej Ultrakrwi, na stronie głównej aplikacji kliknij „Rozpocznij trening”. </p>
+      <div class="realtive max-w-xl z-20 pt-16 pb-8 lg:pt-0">
+        <h2 class="text-4xl md:text-6xl font-poppins font-bold leading-tight mb-4 text-change">Stwórz swoją historię krwiodawstwa.</h2>
+        <p class="font-serif text-lg">Utwórz swój osobisty dziennik krwiodawcy. Dodawaj donacje i śledź, kiedy następnym razem możesz oddać krew. Aplikacja wyśle Ci też powiadomienie, kiedy to nastąpi. Jeśli jesteś już stałym krwiodawcą lub stałą krwiodawczynią, w zakładce „Przegląd” znajdziesz Krwiostory czyli autorski pomysł na przedstawienie Twojej historii krwiodawstwa! </p>
       </div>
       <div class="w-full z-10 h-96/100 top-0 mt-2 right-0 absolute rounded-3xl transform shadow-xl bg-gradient-to-br from-red-200 to-red-600 rotate-1 sm: rotate-1"></div>
       <div class="w-full z-0 h-full top-0 right-0 absolute rounded-3xl transform bg-gray-100"></div>
     </div>
 
-    <div class="flex flex-col md:flex-row w-95/100 justify-center relative items-center my-8 px-8 md:px-12">
-     <div class="realtive max-w-xl z-20 pt-16 pb-8 md:pt-0 mr-16">
-        <h2 class="text-4xl md:text-6xl font-display font-bold leading-tight mt-0 mb-4 text-change">Wygraj chusty w&nbsp;konkursie</h2>
-        <p class="font-serif text-lg max-w-prose">Każdy użytkownik, który od 01.12.2021 do 31.01.2022 pokona z użyciem aplikacji GoKrew 100 mil bierze udział w losowaniu stu wielofunkcyjnych chust od Ultrakrwi. Szczegóły w <a class="underline" href="http://ultrakrew.pl/aplikacja/" target="_blank">regulaminie aplikacji</a>.</p>
+    <div class="flex flex-col lg:flex-row w-95/100 justify-center relative items-center my-8 px-8 lg:px-12">
+     <div class="realtive max-w-xl z-20 pt-16 pb-8 lg:pt-0 mr-16">
+        <h2 class="text-4xl md:text-6xl font-poppins font-bold leading-tight mb-4 text-change">Zbieraj kilometry całą firmą<sup><sup class="text-xs">4</sup></sup></h2>
+        <p class="font-serif text-lg">Firmy Wspierające otrzymują od Ultrakrwi dostęp do panelu dla firm, dzięki któremu pracownicy razem pracują na wynik swojej firmy i swoich zespołów. Zbieranie kilometrów jest bardzo proste - po prostu wychodzisz z domu! Firmy mogą organizować konkursy dla pracowników, motywując ich do działania<sup><sup class="text-xs">5</sup></sup>. </p>
       </div>
-        <img class="opacity-0 object max-w-none relative z-20 shadow-xl" src="images/wygraj.png" width="300" data-value="2">
+        <img class="opacity-0 object max-w-none relative z-20" src="images/iphones-standing-workout.png" width="450" data-value="2">
       <div class="w-full z-10 h-96/100 top-0 mt-2 right-0 absolute rounded-3xl transform shadow-xl bg-gradient-to-br from-blue-200 to-blue-600 -rotate-1 sm:-rotate-1"></div>
       <div class="w-full z-0 h-full top-0 right-0 absolute rounded-3xl transform bg-gray-100"></div>
     </div>
 
     <div class="flex flex-col md:flex-row w-95/100 justify-center items-center relative my-8 px-8 md:px-12">
       <div class="order-last md:order-first relative z-20 md:mr-16">
-        <img class="opacity-0 object max-w-none" src="images/donations.png" width="300" data-value="-1">
+        <img class="opacity-0 object max-w-none relative z-20" src="images/iphone-image-3.png" width="400" data-value="2">
       </div>
       <div class="realtive max-w-xl z-20 pt-16 pb-8 md:pt-0">
-        <h2 class="text-4xl md:text-6xl font-display font-bold leading-tight mt-0 mb-4 text-change" >Stwórz historię krwiodawstwa</h2>
-        <p class="font-serif text-lg max-w-prose">Ultrakrew to akcja mająca na celu promocję honorowego krwiodawstwa i aktywność fizyczną w jednym miejscu. Aplikacja GoKrew odzwierciedla tę ideę. Za pomocą dosłownie paru kliknięć możesz dodać do swojej historii donację krwi (lub jej składników). Aplikacja pokaże Ci, kiedy będzie najbliższa możliwość do oddania jej następnym razem z podziałem na składniki. Wszystko w jednej aplikacji. </p>
+        <h2 class="text-4xl md:text-6xl font-poppins font-bold leading-tight mb-4 text-change">Znajdź najbliższe centrum krwiodawstwa</h2>
+        <p class="font-serif text-lg">W aplikacji GoKrew jest kompletna lista centrów krwiodawstwa w Polsce, na której znajdziesz nie tylko adres, ale również email, telefon czy odnośnik do strony internetowej każdego centrum. Pozwól aplikacji znaleźć to najbliżej Ciebie i nie trać czasu na szukanie potrzebnych informacji! </p>
       </div>
       <div class="w-full z-10 h-96/100 top-0 mt-2 right-0 absolute rounded-3xl transform shadow-xl bg-gradient-to-br from-red-200 to-red-600 rotate-1 sm: rotate-1"></div>
       <div class="w-full z-0 h-full top-0 right-0 absolute rounded-3xl transform bg-gray-100"></div>
     </div>
 
+    <div class="flex flex-col justify-center items-center bg-gradient-to-br from-blue-200 to-blue-600 p-24 w-screen">
+      <div class="flex flex-col justify-center items-center">
+        <h3 class="text-4xl lg:text-6xl font-poppins font-bold mb-4">Masz pytania?</h3>
+        <p class="font-serif text-lg">Skontaktuj się z nami pod adresem <a class="underline text-gray-900 hover:text-black" href="mailto:gokrew@ultrakrew.pl" title="Wyślij maila na adres gokrew@ultrakrew.pl">gokrew@ultrakrew.pl</a>, jeśli masz jakieś pytania lub chcesz zostać partnerem.</p>
+      </div>
+    </div>
+
     <div class="flex flex-col items-center w-95/100 justify-center relative my-16 px-12">
-      <h2 class="text-3xl font-display font-bold leading-tight text-change text-center">Pobierz aplikację na swój telefon z&nbsp;Androidem</h2>
-        <a class="block mt-4" href="https://bit.ly/GoKrew" target="_blank">
+      <h2 class="text-3xl font-poppins font-bold leading-tight text-change text-center">Pobierz GoKrew z Google Play lub App Store:</h2>
+      <div class="flex items-center justify-center">
+        <a class="block mt-4" href="https://play.google.com/store/apps/details?id=com.ultrakrew.gokrew" target="_blank">
           <img class="w-56 transform transition duration-200 hover:scale-105" src="images/google-play-badge.png">
-        </a>      
+        </a>
+        <a class="block mt-4" href="https://apps.apple.com/us/app/gokrew-aplikacja-ultrakrew/id6472076482" target="_blank">
+          <img class="w-56 transform transition duration-200 scale-90 hover:scale-95" src="images/app-store-badge.png">
+        </a>
+      </div>   
     </div>
 
   </section>
+{% endblock %}
+
+{% block legal %}
+<div class="text-xs">
+  <sup>1</sup> Google Play i logo Google Play są znakami towarowymi firmy Google LLC.<br />
+  <sup>2</sup> Apple, Logo Apple, iPhone i App Store są zastrzeżonymi znakami towarowymi Apple Inc.<br />
+  <sup>3</sup> Do korzystania z Aplikacji niezbędne jest zaakceptowanie Regulaminu i Polityki Prywatności.<br />
+  <sup>4</sup> Dotyczy wybranych firm wspierających działania statutowe Stowarzyszenia Ultrakrew. <br />
+  <sup>5</sup> Obowiązują ograniczenia. Szczegóły określa pracodawca na zasadach podanych w Regulaminie <br />
+  <sup>6</sup> Ultrakrew® jest zastrzeżoną nazwą Stowarzyszenia Ultrakrew. <br />
+</div>
 {% endblock %}
